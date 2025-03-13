@@ -40,6 +40,12 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   width: 1168px;
   padding-left: 16px;
@@ -52,7 +58,16 @@ button {
 .page-header {
 }
 
+.page-header .container {
+  display: flex;
+  align-items: center;
+}
+
 .header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-between;
 }
 
 .logo-link {
@@ -60,9 +75,11 @@ button {
   font-size: 18px;
   line-height: 1.11;
   letter-spacing: -0.03em;
-  display: block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  gap: 4px;
 }
 
 .logo-part {
@@ -75,6 +92,8 @@ button {
 }
 
 .header-nav-list {
+  display: flex;
+  gap: 24px;
 }
 
 .header-nav-list-item {
@@ -98,12 +117,14 @@ button {
 }
 
 .social-list {
+  display: flex;
+  gap: 14px;
+  margin-left: 90px;
 }
 
 .social-list-item {
   width: 40px;
   height: 40px;
-  margin-bottom: 14px;
 }
 
 .social-link {
@@ -124,14 +145,16 @@ button {
 
 /* #region Hero */
 .hero {
+  padding-bottom: 80px;
 }
 
-.hero .container {
+.hero-container {
   background: rgba(17, 17, 17, 0.7);
   padding-top: 380px;
   padding-bottom: 40px;
   border-radius: 30px;
   padding-left: 40px;
+  padding-right: 40px;
 }
 
 .hero-title {
