@@ -53,6 +53,18 @@ img {
   margin: 0 auto;
   border: 1px solid red;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* #region header */
 .page-header {
@@ -221,6 +233,8 @@ img {
 /* #region Benefits */
 .benefits {
   background-color: var(--violet);
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 /* .benefits-title {
@@ -234,9 +248,12 @@ img {
 } */
 
 .benefits-list {
+  display: flex;
+  gap: 88px;
 }
 
 .benefits-list-item {
+  width: calc((100% - 2 * 88px) / 3);
 }
 
 .benefits-subtitle {
@@ -244,6 +261,7 @@ img {
   font-size: 18px;
   line-height: 1.22;
   color: var(--white);
+  margin-bottom: 18px;
 }
 
 .benefits-text {
