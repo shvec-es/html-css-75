@@ -296,17 +296,27 @@ img {
 
 .benefits-list-item {
   width: calc((100% - 2 * 88px) / 3);
+  position: relative;
+}
+.benefits-list-item:not(:first-child):before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 1px;
+  height: 124px;
+  position: absolute;
+  top: 63px;
+  left: -44px;
 }
 
 .icon-wraper {
   width: 62px;
   height: 62px;
   border: 1px solid rgba(255, 255, 255, 0.5);
-    border-radius: 365px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 22px;
+  border-radius: 365px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 22px;
 }
 
 .benefits-subtitle {
