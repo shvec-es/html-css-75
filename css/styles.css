@@ -298,6 +298,17 @@ img {
   width: calc((100% - 2 * 88px) / 3);
 }
 
+.icon-wraper {
+  width: 62px;
+  height: 62px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 365px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
 .benefits-subtitle {
   font-weight: 600;
   font-size: 18px;
