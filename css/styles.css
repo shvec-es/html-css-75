@@ -71,8 +71,7 @@ img {
 }
 
 /* #region header */
-.page-header {
-}
+.page-header {}
 
 .page-header .container {
   display: flex;
@@ -112,8 +111,7 @@ img {
   gap: 24px;
 }
 
-.header-nav-list-item {
-}
+.header-nav-list-item {}
 
 .header-nav-link {
   display: block;
@@ -172,10 +170,8 @@ img {
 
 .hero-container {
   background-color: rgba(17, 17, 17, 0.7);
-  background-image: linear-gradient(
-      rgba(17, 17, 17, 0.4),
-      rgba(17, 17, 17, 0.4)
-    ),
+  background-image: linear-gradient(rgba(17, 17, 17, 0.4),
+      rgba(17, 17, 17, 0.4)),
     url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -298,6 +294,7 @@ img {
   width: calc((100% - 2 * 88px) / 3);
   position: relative;
 }
+
 .benefits-list-item:not(:first-child):before {
   content: "";
   background-color: rgba(255, 255, 255, 0.5);
@@ -403,8 +400,7 @@ img {
 /* #endregion Taste */
 
 /* #region Made */
-.made {
-}
+.made {}
 
 .made-title {
   font-weight: 600;
@@ -439,8 +435,7 @@ img {
 /* #endregion Made */
 
 /* #region Products */
-.products {
-}
+.products {}
 
 .products-title {
   font-weight: 600;
@@ -451,11 +446,9 @@ img {
   text-align: center;
 }
 
-.products-list {
-}
+.products-list {}
 
-.products-list-item {
-}
+.products-list-item {}
 
 .products-img {
   width: 230px;
@@ -485,8 +478,7 @@ img {
 /* #endregion Products */
 
 /* #region Sellers */
-.sellers {
-}
+.sellers {}
 
 .sellers-title {
   font-weight: 600;
@@ -498,9 +490,13 @@ img {
 }
 
 .sellers-list {
+  display: flex;
+  gap: 16px;
 }
 
 .sellers-list-item {
+  width: 368px;
+
 }
 
 .sellers-img {
@@ -514,13 +510,51 @@ img {
   line-height: 1.33;
   letter-spacing: -0.02em;
   text-transform: uppercase;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background-color: var(--white);
+  padding: 28px 0;
+  text-align: center;
+}
+
+.overley {
+  position: relative;
+  overflow: hidden;
+
+}
+
+.overley-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  color: var(--light);
+  backdrop-filter: blur(15px);
+  background: linear-gradient(161deg, rgba(253, 253, 255, 0.1) 0%, rgba(8, 2, 21, 0.1) 100%);
+  width: 100%;
+  height: 100%;
+  padding-top: 178px;
+  padding-left: 40px;
+  padding-right: 40px;
+  transform: translateY(100%);
+  transition: transform var(--animation);
+}
+
+.sellers-list-item:hover .overley-text {
+  transform: translateY(0);
+
 }
 
 /* #endregion Sellers */
 
 /* #region Chocolove */
-.chocolove {
-}
+.chocolove {}
 
 .chocolove-title {
   font-weight: 600;
@@ -531,8 +565,7 @@ img {
   text-align: center;
 }
 
-.chocolove-list {
-}
+.chocolove-list {}
 
 .chocolove-list-item {
   background-color: var(--white);
@@ -598,14 +631,11 @@ img {
   color: #fff;
 }
 
-.footer-social-list {
-}
+.footer-social-list {}
 
-.footer-social-list-item {
-}
+.footer-social-list-item {}
 
-.footer-social-link {
-}
+.footer-social-link {}
 
 .footer-social-img {
   color: #fff;
@@ -635,14 +665,11 @@ img {
   color: #fff;
 }
 
-.footer-nav {
-}
+.footer-nav {}
 
-.footer-nav-list {
-}
+.footer-nav-list {}
 
-.footer-nav-list-item {
-}
+.footer-nav-list-item {}
 
 .footer-nav-list-link {
   font-weight: 500;
