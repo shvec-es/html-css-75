@@ -521,7 +521,11 @@
     <!-- modal window -->
     <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-close-btn" type="button">x</button>
+        <button class="modal-close-btn" type="button">
+          <svg width="28" height="28" class="close-icon">
+            <use href="./images/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
         <p class="modal-title">LEAVE A REVIEW ABOUT OUR CHOCOLATE</p>
 
         <form autocomplete="off">
@@ -529,9 +533,9 @@
             <label class="modal-label" for="name">Name</label>
             <div class="modal-field">
               <input class="modal-input" type="text" id="name" name="name" />
-              <!-- <svg class="modal-icon" width="" height="">
-      <use href=""></use>
-    </svg> -->
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
             </div>
           </div>
 
@@ -539,9 +543,9 @@
             <label class="modal-label" for="email">Email</label>
             <div class="modal-field">
               <input class="modal-input" type="email" id="email" name="email" />
-              <!-- <svg class="modal-icon" width="" height="">
-      <use href=""></use>
-    </svg> -->
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
             </div>
           </div>
 
@@ -549,9 +553,9 @@
             <label class="modal-label" for="phone">Phone number</label>
             <div class="modal-field">
               <input class="modal-input" type="tel" id="phone" name="phone" />
-              <!-- <svg class="modal-icon" width="" height="">
-      <use href=""></use>
-    </svg> -->
+              <svg class="modal-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
             </div>
           </div>
 
@@ -562,6 +566,7 @@
                 class="modal-textarea"
                 id="comment"
                 name="comment"
+                placeholder="Enter text"
               ></textarea>
             </div>
           </div>
