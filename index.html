@@ -519,7 +519,7 @@
       </nav>
     </footer>
     <!-- modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg width="28" height="28" class="close-icon">
@@ -592,5 +592,17 @@
         </form>
       </div>
     </div>
+    <script>
+      // close modal
+      document
+        .querySelector(".modal-close-btn")
+        .addEventListener("click", () => {
+          document.querySelector(".backdrop").classList.remove("is-open");
+        });
+      // open modal
+      document.querySelector(".btn-review").addEventListener("click", () => {
+        document.querySelector(".backdrop").classList.add("is-open");
+      });
+    </script>
   </body>
 </html>
