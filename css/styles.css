@@ -813,15 +813,39 @@ img {
 }
 
 .checkbox-wrapper {
+  margin-bottom: 40px;
 }
 
 .checkbox-input {
 }
 
 .modal-label-accept {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.6);
+}
+
+.modal-check {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(17, 17, 17, 0.14);
+  margin-right: 12px;
+  transition: background-color var(--animation);
 }
 
 .privacy-link {
+  text-decoration: underline;
+  color: #fd9222;
+}
+
+.checkbox-input:checked + .modal-label-accept > .modal-check {
+  background-color: var(--orange);
+  border-color: transparent;
 }
 
 .modal-submit-btn {
