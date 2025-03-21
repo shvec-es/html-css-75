@@ -31,7 +31,7 @@
               <use href="./images/icons.svg#chocolate"></use>
             </svg>
           </a>
-          <button class="burger-btn" type="button">
+          <button class="burger-btn js-mobile-menu" type="button">
             <svg class="burger-icon" width="28" height="28">
               <use href="./images/icons.svg#icon-menu"></use>
             </svg>
@@ -80,15 +80,15 @@
           </li>
         </ul>
       </div>
-      <div class="mobile-menu is-open">
-        <button type="button" class="mobile-menu-close-btn">
+      <div class="mobile-menu">
+        <button type="button" class="mobile-menu-close-btn js-mobile-menu">
           <svg class="mobile-menu-close-icon" width="28" height="28">
             <use href="./images/icons.svg#icon-x-close"></use>
           </svg>
         </button>
         <ul class="mobile-menu-nav-list">
           <li class="mobile-menu-list-item">
-            <a class="mobile-menu-link" href="./index.html">Home</a>
+            <a class="mobile-menu-link active" href="./index.html">Home</a>
           </li>
           <li class="mobile-menu-list-item">
             <a class="mobile-menu-link" href="#made">How it’s made?</a>
@@ -648,14 +648,20 @@
     </div>
     <script>
       // close modal
-      document
-        .querySelector(".modal-close-btn")
-        .addEventListener("click", () => {
-          document.querySelector(".backdrop").classList.remove("is-open");
-        });
+      // document
+      //   .querySelector(".modal-close-btn")
+      //   .addEventListener("click", () => {
+      //     document.querySelector(".backdrop").classList.remove("is-open");
+      //   });
       // open modal
-      document.querySelector(".btn-review").addEventListener("click", () => {
-        document.querySelector(".backdrop").classList.add("is-open");
+      // document.querySelector(".btn-review").addEventListener("click", () => {
+      //   document.querySelector(".backdrop").classList.add("is-open");
+      // });
+      // mobile-menu toggle
+      document.querySelectorAll(".js-mobile-menu").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.querySelector(".mobile-menu").classList.toggle("is-open");
+        });
       });
     </script>
   </body>
